@@ -1,0 +1,525 @@
+VARIABLES
+1)let country = "India";
+let continent = "Asia";
+let population = 13910000;
+
+2)console.log("country:"+country);
+console.log("country:"+continent);
+console.log("country:"+population);
+
+country is:India
+con:Asia
+pop:13910000
+
+
+Data Types:
+1)let country = " India";
+let continent = "Asia"; 
+let isIsland = "false"; 
+
+
+2)console.log("Country: " + country);
+console.log("Continent: " + continent);
+
+console.log("Is Island: " + isIsland);
+
+
+Country:  India
+Continent: Asia
+Is Island: false
+Language: kannada
+
+let,const and var
+1)let kar="kan";
+let north="hin";
+let andra="tel";
+let tnadu="tami";
+
+console.log(kar);
+kan
+
+3)const country = "India";
+const continent = "Asia";
+let population = 13910000;
+
+4) let averagePopulation = 33; 
+
+if (population < averagePopulation) {
+    console.log(country + " has less people than the average country.");
+} else {
+    console.log(country + " has more people than the average country.");
+}
+
+India has more people than the average country.
+
+5)let contry = "india";
+let contnent = "asia";
+let populati = 50;
+let isIsland = false;
+let language = "hind";
+
+let description = contry + " is in " + contnent + ", and its " + populati + " million people speak " + language + ".";
+console.log(description);
+
+india is in asia, and its 50 million people speak hind.
+
+strins & template:
+
+1)let contry = "india";
+let contnent = "asia";
+let populati = 50;
+let isIsland = false;
+let language = "hind";
+
+let description = contry + " is in " + contnent + ", and its " + populati + " million people speak " + language + ".";
+console.log(description);
+
+india is in asia, and its 50 million people speak hind.
+
+ Taking Decisions: if / else Statements :
+
+1)let country = "Portugal";
+let population = 11; 
+let averagePopulation = 33; 
+
+if (population > averagePopulation) {
+    console.log(`${country}'s population is above average.`);
+} else {
+    let belowAverage = averagePopulation - population;
+    console.log(`${country}'s population is ${belowAverage} million below average.`);
+}
+Portugal's population is 22 million below average.
+
+2)let country = "Portugal";
+let population = 11; 
+let averagePopulation = 33; 
+
+if (population > averagePopulation) {
+    console.log(`${country}'s population is above average.`);
+} else {
+    let belowAverage = averagePopulation - population;
+    console.log(`${country}'s population is ${belowAverage} million below average.`);
+}
+
+
+population = 13;
+
+if (population > averagePopulation) {
+    console.log(`${country}'s population is above average.`);
+} else {
+    let belowAverage = averagePopulation - population;
+    console.log(`${country}'s population is ${belowAverage} million below average.`);
+}
+
+
+population = 130;
+
+if (population > averagePopulation) {
+    console.log(`${country}'s population is above average.`);
+} else {
+    let belowAverage = averagePopulation - population;
+    console.log(`${country}'s population is ${belowAverage} million below average.`);
+}
+
+population = 11;
+
+Portugal's population is 20 million below average.
+Portugal's population is above average.
+
+1Type Conversion and Coercion :
+2)4,617
+3)23
+4)f
+5)1143
+
+ Equality Operators: == vs. ===:
+
+1)let numNeighbours = prompt('How many neighbour countries does your country have?');
+2)let numNeighbours = prompt('How many neighbour countries does your country have?');
+
+if (numNeighbours == 1) {
+    console.log('Only 1 border!');
+}
+3)let numNeighbours = prompt('How many neighbour countries does your country have?');
+
+if (numNeighbours == 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+}
+4)let numNeighbours = prompt('How many neighbour countries does your country have?');
+
+if (numNeighbours == 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+5)
+let numNeighbours = 1;
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+
+
+numNeighbours = 0;
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+
+
+numNeighbours = 5;
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+Only 1 border!
+No borders
+More than 1 border!
+
+6)
+let numNeighbours = 1;
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+
+
+numNeighbours = 0;
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+
+numNeighbours = 5;
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+Only 1 border!
+No borders
+More than 1 border!
+
+7)let numNeighbours = parseInt(prompt('How many neighbour countries does your country have?'));
+
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders');
+}
+Only 1 border!
+8)for ensuring accurate and predictable behavior in our code.
+
+ Logical Operators:
+1)/*  */
+2)
+const countries = [
+    { name: "Canada", population: 38, language: "English", isIsland: false },
+    { name: "Australia", population: 25, language: "English", isIsland: true },
+    { name: "United Kingdom", population: 68, language: "English", isIsland: true },
+    { name: "Germany", population: 83, language: "German", isIsland: false },
+    { name: "Japan", population: 126, language: "Japanese", isIsland: true }
+];
+
+
+function findCountryForSarah(countries) {
+    return countries.filter(country => {
+        return country.language === "English" && 
+               country.population < 50 &&
+               !country.isIsland;
+    });
+}
+
+const suitableCountries = findCountryForSarah(countries);
+
+
+console.log("Countries suitable for Sarah: ");
+suitableCountries.forEach(country => {
+    console.log(country.name);
+});
+3)const myCountry = {
+    name: "Canada",
+    population: 38,
+    language: "English",
+    isIsland: false
+};
+
+if (myCountry.language === "English" &&
+    myCountry.population < 50 &&
+    !myCountry.isIsland) {
+    console.log("Your country is suitable for Sarah!");
+} else {
+    console.log("Sorry, your country may not be suitable for Sarah.");
+}
+4)const myCountry = {
+    name: "Canada",
+    population: 38,
+    language: "English",
+    isIsland: false
+};
+
+if (myCountry.language === "English" &&
+    myCountry.population < 50 &&
+    !myCountry.isIsland) {
+    console.log("You should live in Canada :)");
+} else {
+    console.log("Canada does not meet your criteria :(");
+}
+5)const myCountry = {
+    name: "Ireland",
+    population: 5, 
+    language: "English", 
+    isIsland: true 
+};
+
+if (myCountry.language === "English" &&
+    myCountry.population < 50 &&
+    !myCountry.isIsland) {
+    console.log("You should live in Ireland :)");
+} else {
+    console.log("Ireland does not meet your criteria :(");
+}
+Ireland does not meet your criteria :(
+ The switch Statement :
+1)let language = "english"; // Change the language here to test different cases
+
+switch (language.toLowerCase()) {
+    case "chinese":
+    case "mandarin":
+        console.log("MOST number of native speakers!");
+        break;
+    case "spanish":
+        console.log("2nd place in number of native speakers");
+        break;
+    case "english":
+        console.log("3rd place");
+        break;
+    case "hindi":
+        console.log("Number 4");
+        break;
+    case "arabic":
+        console.log("5th most spoken language");
+        break;
+    default:
+        console.log("Great language too :D");
+}
+2)let age = 20;
+let message = age >= 18 ? "You are an adult" : "You are a minor";
+console.log(message);
+Output: "You are an adult"
+
+
+functions part 2:
+function describeCountry(country, population, capitalCity) {
+    return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+}
+console.log(describeCountry("Finland", 6, "Helsinki")); 
+ Output: Finland has 6 million people and its capital city is Helsinki
+3)
+function describeCountry(country, population, capitalCity) {
+    return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+}
+let description1 = describeCountry("Canada", 38, "Ottawa");
+let description2 = describeCountry("Australia", 25, "Canberra");
+let description3 = describeCountry("Italy", 60, "Rome");
+console.log(description1);
+console.log(description2);
+console.log(description3);
+  Function Declarations vs. Expressions:
+1)function percentageOfWorld1(population) {
+    Calculate the percentage
+    let percentage = (population / 7900) * 100;
+    return percentage;
+}
+let chinaPopulation = 1441;
+let chinaPercentage = percentageOfWorld1(chinaPopulation);
+console.log(`China represents about ${chinaPercentage}% of the world population.`);
+2)function percentageOfWorld1(population) {
+   Calculate the percentage
+    let percentage = (population / 7900) * 100;
+    return percentage;
+}
+let chinaPopulation = 1441;
+let chinaPercentage = percentageOfWorld1(chinaPopulation);
+console.log(`China represents about ${chinaPercentage}% of the world population.`);
+3)// Function declaration
+function percentageOfWorld1(population) {
+
+    let percentage = (population / 7900) * 100;
+    return percentage;
+}
+
+
+let chinaPopulation = 1441;
+let chinaPercentage = percentageOfWorld1(chinaPopulation);
+
+let indiaPopulation = 1391;
+let indiaPercentage = percentageOfWorld1(indiaPopulation);
+
+let usaPopulation = 331;
+let usaPercentage = percentageOfWorld1(usaPopulation);
+
+console.log(`China represents about ${chinaPercentage}% of the world population.`);
+console.log(`India represents about ${indiaPercentage}% of the world population.`);
+console.log(`USA represents about ${usaPercentage}% of the world population.`);
+4)
+const percentageOfWorld2 = function(population) {
+ 
+    let percentage = (population / 7900) * 100;
+    return percentage;
+};
+
+
+let chinaPopulation = 1441;
+let chinaPercentage = percentageOfWorld2(chinaPopulation);
+
+let indiaPopulation = 1391;
+let indiaPercentage = percentageOfWorld2(indiaPopulation);
+
+let usaPopulation = 331;
+let usaPercentage = percentageOfWorld2(usaPopulation);
+
+console.log(`China represents about ${chinaPercentage}% of the world population.`);
+console.log(`India represents about ${indiaPercentage}% of the world population.`);
+console.log(`USA represents about ${usaPercentage}% of the world population.`);
+
+Functions Calling Other Functions:
+1.function describePopulation(country, population) {
+    let percentage = (population / 7900) * 100;
+   let description = `${country} has ${population} million people, which is about ${percentage.toFixed(1)}% of the world.`;
+   return description;
+}
+console.log(describePopulation("China", 1441)); // Output: China has 1441 million people, which is about 18.3% of the world.
+2.
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100;
+}
+
+
+function describePopulation(country, population) {
+  
+    let percentage = percentageOfWorld1(population);
+
+    let description = `${country} has ${population} million people, which is about ${percentage.toFixed(1)}% of the world.`;
+
+    return description;
+}
+  Arrays  :
+1)
+let populations = [1441, 1391, 331, 67]; 
+
+console.log(populations); 
+[ 1441, 1391, 331, 67 ]
+2.. Increase the country's population by two million using dot notation, and then decrease it by two million using brackets notation.  */
+let finland = {
+    country: "Finland",
+    population: 6,
+    language: "Finnish",
+    neighbours: 3,
+    capital: "Helsinki"
+};
+
+console.log(`${finland.country} has ${finland.population} million ${finland.language}-speaking people, ${finland.neighbours} neighbouring countries and a capital called ${finland.capital}.`);
+
+
+finland.population += 2; 
+finland["population"] -= 2; 
+
+console.log(finland.population); 
+
+Basic Array Operations:  
+1) Create an array containing all the neighbouring countries of a country of your choice. Choose a country which has at least 2 or 3 neighbours. Store the array into a variable called 'neighbours' 
+2) At some point, a new country called 'Utopia' is created in the neighbourhood of your selected country. So add it to the end of the 'neighbours' array  
+3) Unfortunately, after some time, the new country is dissolved. So remove it from the end of the array  
+4)If the 'neighbours' array does not include the country ‘Germany’, log to the console: 'Probably not a central European country :D'  
+5)Change the name of one of your neighbouring countries. To do that, find the index of the country in the 'neighbours' array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.  */
+
+let neighbours = ["France", "Spain", "Italy"];
+neighbours.push("Utopia");
+neighbours.pop();
+Step 4: Check if 'neighbours' array includes 'Germany' and log a message if it doesn't
+if (!neighbours.includes("Germany")) {
+    console.log("Probably not a central European country :D");
+}
+5)Change the name of one neighbouring country
+let index = neighbours.indexOf('Spain'); // Find the index of 'Spain'
+if (index !== -1) {
+  neighbours[index] = 'Republic of Spain'; // Replace 'Spain' with 'Republic of Spain'
+}'neighbours' array
+console.log(neighbours);
+
+Dot  Bracket Notation  
+1. Using the object from the previous assignment, log a string like this to the console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki.'  
+
+2. Increase the country's population by two million using dot notation, and then decrease it by two million using brackets notation.  */
+let finland = {
+    country: "Finland",
+    population: 6,
+    language: "Finnish",
+    neighbours: 3,
+    capital: "Helsinki"
+};
+console.log(`${finland.country} has ${finland.population} million ${finland.language}-speaking people, ${finland.neighbours} neighbouring countries and a capital called ${finland.capital}.`);
+finland.population += 2; 
+finland["population"] -= 2; 
+
+console.log(finland.population); 
+Object Methods  
+1.Add a method called 'describe' to the 'myCountry' object. This method will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword. 
+ 2Call the 'describe' method 
+
+3.Add a method called 'checkIsland' to the 'myCountry' object. This method will set a new property on the object, called 'isIsland'. 'isIsland' will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.  */
+
+ let myCountry = {
+    country: 'Fr',
+    capital: 'Paris',
+    language: 'French',
+    population: 67, // in millions
+    neighbours: ['Spain', 'Germany', 'Italy']
+  };
+  console.log(myCountry);
+There are elections in your country! In a small town, there are only 50 voters. Use a for loop to simulate the 50 people voting, by logging a string like this to the console (for numbers 1 to 50): 'Voter number 1 is currently voting' 
+for (let i = 1; i <= 50; i++) {
+    console.log(`Voter number ${i} is currently voting`);
+ The while Loop  
+1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing', but this time using a while loop (call the array 'percentages3') 
+
+  2. Reflect on what solution you like better for this task: the for loop or the while loop? 
+let populations = [1441, 1380, 331, 82];
+let percentages3 = [];
+let i = 0;
+
+while (i < populations.length) {
+    percentages3.push(percentageOfWorld1(populations[i]));
+    i++;
+}
+
+console.log(percentages3);
+
+
+
+
+

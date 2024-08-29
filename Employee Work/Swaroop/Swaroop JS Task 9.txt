@@ -1,0 +1,115 @@
+
+
+TASK 9 ASSIGNMENT :
+
+ 
+
+
+BankAccount Class:
+
+
+class BankAccount {
+    constructor(owner, balance = 0) {
+        this.owner = owner;
+        this.balance = balance;
+   }
+
+    deposit(amount) {
+     if (amount > 0) {
+    this.balance += amount;
+      console.log(`${amount} deposited. New balance: ${this.balance}`);
+    } else {
+            console.log('Deposit amount must be positive');
+    }
+ }
+
+    withdraw(amount) {
+      if (amount > 0) {
+      if (amount <= this.balance) {
+      this.balance -= amount;
+     console.log(`${amount} withdrawn. New balance: ${this.balance}`);
+      } else
+   console.log('Insufficient funds for withdrawal');
+       }
+       } else {
+   console.log('Withdrawal amount must be positive');
+ }
+ }
+}
+
+
+
+
+
+
+ SavingsAccount Class :
+
+
+class SavingsAccount extends BankAccount {
+    constructor(owner, balance = 0, interestRate = 0) {
+    super(owner, balance);
+    this.interestRate = interestRate;
+  }
+
+  addInterest() {
+   const interest = (this.balance * this.interestRate) / 100;
+   this.balance += interest;
+ console.log(`Interest added. New balance: ${this.balance}`);
+  }
+}
+
+class CheckingAccount extends BankAccount {
+    constructor(owner, balance = 0, overdraft = 0) {
+        super(owner, balance);
+        this.overdraft = overdraft;
+    }
+
+ withdraw(amount) {
+      if (amount > 0) {
+    if (amount <= this.balance + this.overdraft) {
+   this.balance -= amount;
+       console.log(`${amount} withdrawn. New balance: ${this.balance}`);
+      } else {
+         console.log('Overdraft limit exceeded');
+      }
+      } else {
+    console.log('Withdrawal amount must be positive');
+    }
+    }
+}
+
+
+
+
+
+
+
+const savings = new SavingsAccount('Alice', 1000, 5);
+savings.deposit(200);
+savings.withdraw(100);
+savings.addInterest();
+console.log(savings instanceof SavingsAccount);
+console.log(savings instanceof BankAccount);    
+
+const checking = new CheckingAccount('Bob', 500, 200);
+checking.deposit(300);
+checking.withdraw(1000);
+checking.withdraw(1200); 
+console.log(checking instanceof CheckingAccount); 
+console.log(checking instanceof BankAccount);    
+
+
+
+
+
+output:
+200 deposited New balance: 1200
+100 withdrawn New balance:1100
+Interest added New balance: 1155
+true
+true
+300 deposited New balance:800
+1000 withdrawn New balance:-200
+Overdraft limit exceeded
+true
+true

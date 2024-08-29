@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title data-react-helmet="true">OYO: India&#x27;s Best Online Hotel Booking Site for Sanitized Stays</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cityHotels.css">
+</head>
+
+<body>
+  <div class="layout__container">
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>OYO</title>
+          <path
+            d="M19.843 16.185C22.135 16.185 24 14.307 24 12c0-2.309-1.865-4.185-4.157-4.185-2.293 0-4.158 1.876-4.158 4.185 0 2.307 1.865 4.185 4.158 4.185zm0-5.677c.817 0 1.482.67 1.482 1.492s-.666 1.49-1.483 1.49A1.488 1.488 0 0 1 18.36 12c0-.824.665-1.493 1.482-1.493zM4.157 16.185c2.293 0 4.158-1.878 4.158-4.185 0-2.309-1.865-4.185-4.158-4.185C1.866 7.815 0 9.691 0 12c0 2.307 1.866 4.185 4.157 4.185zm0-5.677c.818 0 1.483.67 1.483 1.492s-.665 1.49-1.483 1.49A1.488 1.488 0 0 1 2.677 12c0-.824.664-1.493 1.48-1.493zm7.84-.094L10.722 7.87H7.733l2.791 5.564v2.62h2.948v-2.62l2.791-5.564h-2.99l-1.275 2.544Z" />
+        </svg>
+      </div>
+      <div class="navigations__container">
+        <ul style="display: flex;">
+          <li>
+            <div class="promoCard">
+              <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.95603 5.4489C1.84279 5.19704 1.54682 5.08467 1.29497 5.1979C1.04311 5.31114 0.930736 5.60711 1.04397 5.85896L1.95603 5.4489ZM8.0625 20.2501L7.60647 20.4551C7.68914 20.639 7.87413 20.7552 8.07565 20.7499C8.27717 20.7446 8.45579 20.6188 8.52868 20.4309L8.0625 20.2501ZM12.4662 10.277C12.566 10.0196 12.4382 9.7299 12.1808 9.63006C11.9233 9.53022 11.6337 9.658 11.5338 9.91546L12.4662 10.277ZM1.04397 5.85896L7.60647 20.4551L8.51853 20.0451L1.95603 5.4489L1.04397 5.85896ZM8.52868 20.4309L12.4662 10.277L11.5338 9.91546L7.59632 20.0693L8.52868 20.4309Z"
+                    fill="#212121"></path>
+                  <path
+                    d="M22.044 5.4489C22.1572 5.19704 22.4532 5.08467 22.705 5.1979C22.9569 5.31114 23.0693 5.60711 22.956 5.85896L22.044 5.4489ZM15.9375 20.2501L16.3935 20.4551C16.3094 20.6421 16.1197 20.7589 15.9149 20.7496C15.71 20.7403 15.5316 20.6069 15.4648 20.413L15.9375 20.2501ZM12.8398 12.7976C12.7498 12.5366 12.8885 12.252 13.1496 12.162C13.4106 12.072 13.6952 12.2107 13.7852 12.4718L12.8398 12.7976ZM22.956 5.85896L16.3935 20.4551L15.4815 20.0451L22.044 5.4489L22.956 5.85896ZM15.4648 20.413L12.8398 12.7976L13.7852 12.4718L16.4102 20.0871L15.4648 20.413Z"
+                    fill="#212121"></path>
+                  <path d="M8.0625 13.9038L12 3.75L15.9375 13.7055L19.875 5.01923M4.125 5.01923L6.75 11.3654"
+                    stroke="#212121" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div class="diacription">
+                <span class="text_1">
+                  Become a Member
+                </span>
+                <br>
+                <span class="text_2">
+                  <small>
+                    Additional 10% off on stays
+                  </small>
+                </span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="promoCard">
+              <div class="icon">
+                <img src="images/briefcase.png" alt="">
+              </div>
+              <div class="diacription">
+                <span class="text_1">
+                  OYO for Business
+                </span>
+                <br>
+                <span class="text_2">
+                  <small>
+                    Trusted by 5000 Corporates
+                  </small>
+                </span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="promoCard">
+              <div class="icon">
+                <img src="images/building.png" alt="">
+              </div>
+              <div class="diacription">
+                <span class="text_1">
+                  List your property
+                </span>
+                <br>
+                <span class="text_2">
+                  <small>
+                    Additional 10% off on stays
+                  </small>
+                </span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="promoCard">
+              <div class="icon">
+                <img src="images/mobile.png" alt="">
+              </div>
+              <div class="diacription">
+                <span class="text_1">
+                  0124-6201611
+                </span>
+                <br>
+                <span class="text_2">
+                  <small>
+                    Call us to Book now
+                  </small>
+                </span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="promoCard">
+              <label style="padding: 0 1rem 0 0;" for="language"><img src="images/world.png" alt=""></label>
+              <select style="width: fit-content; height: 3.8rem; border: none; background: #ffffff;" name="language"
+                id="">
+                <option value="english">English</option>
+                <option value="español">Español</option>
+                <option value="bahasa">Bahasa</option>
+                <option value="vietnamese"> Vietnamese</option>
+                <option value="japanese">Japanese</option>
+                <option value="português">Português</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <a href="login.html" class="promoCard login__link">
+              `<div style="padding: 0 1rem 0 0;" class="icon">
+                <img src="images/user (1).png" alt="">
+              </div>
+              <div class="diacription">
+                <span class="text_1">
+                  Login/Signup
+                </span>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="city__hotels__container">
+      
+      <!-- Filter Section -->
+      <div class="filters__section">
+        <h1>Filters</h1>
+        <p>Popular locations in Bangalore</p>
+        <input type="text" placeholder="Search.." name="" id="">
+        <ul>
+          <li>Koramangala</li>
+          <li>Marathahalli</li>
+          <li>Hsr Layout</li>
+          <li>Majestic</li>
+          <li>Indiranagar</li>
+        </ul>
+        <p>+ View More</p>
+        <hr style="color: #d3d3d35d;">
+
+        <div class="range">
+          <h4>Price</h4>
+          <input class="slider" type="range" name="" id="">
+          <p>
+            <span>Rs. 366</span>
+            <span>Rs. 2126</span>
+          </p>
+        </div>
+
+        <hr style="color: #d3d3d35d;">
+
+        <!-- Collection -->
+        <div class="collections">
+          <h4>
+            Collections
+          </h4>
+          <p>
+            <span class="check__box"></span>
+            <span>Family OYOs</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span>For Group Travellers</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span>Local IDs accepted</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span>OYOs welcomes couples</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span>International guests</span>
+          </p>
+
+          <h4>
+            + View More
+          </h4>
+        </div>
+
+        <hr style="color: #d3d3d35d;">
+
+        <!-- Categories -->
+
+        <div class="collections">
+          <h4>
+            Categories
+          </h4>
+          <p>
+            <span class="check__box"></span>
+            <span style="font-weight: bold;">OYO Rooms</span>
+            <span> - Super affordable stays with essential amenities</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span style="font-weight: bold;">Premium</span>
+            <span> - Hotels at prime location and premium amenities</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span style="font-weight: bold;">Townhouse</span>
+            <span> - Your friendly, premium neighbourhood hotel- Serviced by OYO</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span style="font-weight: bold;">Flagship</span>
+            <span> - Affordable hotels at Prime locations- Serviced by OYO</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span style="font-weight: bold; color: black;">Home</span>
+            <span> - Villas and appartments with extra space and privacy</span>
+          </p>
+
+          <h4>
+            + View More
+          </h4>
+        </div>
+
+        <hr style="color: #d3d3d35d;">
+
+        <!-- Accomodation -->
+        <div class="collections">
+          <h4>
+            Accomodation
+          </h4>
+          <p>
+            <span class="check__box"></span>
+            <span>OYO Home</span>
+          </p>
+          <p>
+            <span class="check__box"></span>
+            <span>Hotel</span>
+          </p>
+        </div>
+
+        <hr style="color: #d3d3d35d;">
+
+        <!-- Hotel Facilities -->
+
+        <div class="collections">
+          <h4>
+            Hotel Facilities
+          </h4>
+          <p>
+            <span class="check__box"></span>
+            <span>Seating area</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span>Balcony</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span>King Size Bed</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span>Queen Size Bed</span>
+          </p>
+
+          <p>
+            <span class="check__box"></span>
+            <span>Room Heater</span>
+          </p>
+
+          <h4>
+            + View More
+          </h4>
+        </div>
+
+        <hr style="color: #d3d3d35d;">
+
+        <!-- Checkin  -->
+        <div class="collections">
+          <h4>
+            Check-in features
+          </h4>
+          <p>
+            <span class="check__box"></span>
+            <span>Pay at hotel</span>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Hotels in Banagalore -->
+
+      <div class="hotel__details__section">
+
+        <div class="hotel__details__header">
+          <h2>Hotels in Banagalore</h2>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; width: 40%;">
+
+            <div class="switch__container">
+              <h4 style="font-weight: normal; margin-right: 1rem;">Map View</h4>
+              <label class="switch">
+                <input type="checkbox" name="" id="">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="sortby__container">
+              <h4 style="font-weight: normal; margin-right: 1rem;">Sort By</h4>
+              <div class="dropdown">
+                <button class="dropbtn">Popularity</button>
+                <div class="dropdown-content">
+                  <a href="#">Guest Ratings</a>
+                  <a href="#">Price High to Low</a>
+                  <a href="#">Price Low to High</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br><hr><br><br>
+
+        <!-- Hotel details -->
+
+          <div class="hotel__detail">
+            <div class="img">
+              <img src="images/hotels/hotel.webp" alt="">
+            </div>
+            <div class="discription__section">
+              <br>
+              <div class="discription__details">
+                <div class="details__left">
+                  <h3>
+                    Super Townhouse Ulsoor Near Halasuru Metro Station
+                  </h3>
+                  <span>Halasuru, Bangalore · </span>
+                  <span>
+                    <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                          <path
+                            d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  <span>5.5 km</span>
+
+                  <br><br><br><br>
+
+                  <small class="rating">
+                    4.3
+                    <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                      </path>
+                    </svg>
+
+                  </small> &nbsp
+                  <small>(640 Ratings) . Very Good</small>
+
+                  <br>
+                  <br>
+
+                  <span class="facility">
+                    <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                      <title>checkmark</title>
+                      <desc>Created with Sketch.</desc>
+                      <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                          <path
+                            d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                            id="checkmark"></path>
+                        </g>
+                      </g>
+                    </svg>
+                    &nbsp;
+                    Doctor on call
+                    &nbsp;
+                    &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                      <path
+                        d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                      </path>
+                    </svg>
+                    &nbsp;
+                    &nbsp;
+                    Parking facility
+                    &nbsp;
+                    &nbsp;
+                    <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                      <title>checkmark</title>
+                      <desc>Created with Sketch.</desc>
+                      <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                          <path
+                            d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                            id="checkmark"></path>
+                        </g>
+                      </g>
+                    </svg>
+                    &nbsp;
+                    &nbsp;
+                    Reception
+                    &nbsp;
+                    &nbsp;
+                    + 20 more
+                  </span>
+
+                </div>
+                <div class="details__right">
+                  <small style="color: #ee2e24; font-weight: bold;">
+                    <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                          fill-rule="nonzero">
+                          <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                            <path
+                              d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                              id="Shape"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    10 people booked this hotel in last 6 hours
+                  </small>
+                </div>
+              </div>
+
+              <!-- price section -->
+
+              <br><br><br>
+
+              <div class="price__section">
+                <div class="price__left">
+                  <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                      style="color: #f5a623; ">72% off</span>
+                  </h1>
+                </div>
+                <div class="price__right">
+                  <a style="text-decoration: none;" href="hotelDetails.html">
+                    <button>View Details</button>
+                  </a>
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <br>
+
+        <!-- Hotel details -->
+
+        <div class="hotel__detail">
+          <div class="img">
+            <img src="images/hotels/hotel.webp" alt="">
+          </div>
+          <div class="discription__section">
+            <br>
+            <div class="discription__details">
+              <div class="details__left">
+                <h3>
+                  Super Townhouse Ulsoor Near Halasuru Metro Station
+                </h3>
+                <span>Halasuru, Bangalore · </span>
+                <span>
+                  <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                        <path
+                          d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span>5.5 km</span>
+
+                <br><br><br><br>
+
+                <small class="rating">
+                  4.3
+                  <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                    </path>
+                  </svg>
+
+                </small> &nbsp
+                <small>(640 Ratings) . Very Good</small>
+
+                <br>
+                <br>
+
+                <span class="facility">
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  Doctor on call
+                  &nbsp;
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                    <path
+                      d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                    </path>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Parking facility
+                  &nbsp;
+                  &nbsp;
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Reception
+                  &nbsp;
+                  &nbsp;
+                  + 20 more
+                </span>
+
+              </div>
+              <div class="details__right">
+                <small style="color: #ee2e24; font-weight: bold;">
+                  <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                        fill-rule="nonzero">
+                        <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                          <path
+                            d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  10 people booked this hotel in last 6 hours
+                </small>
+              </div>
+            </div>
+
+            <!-- price section -->
+
+            <br><br><br>
+
+            <div class="price__section">
+              <div class="price__left">
+                <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                    style="color: #f5a623; ">72% off</span>
+                </h1>
+              </div>
+              <div class="price__right">
+                <button>View Details</button>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <!-- Hotel details -->
+
+        <div class="hotel__detail">
+          <div class="img">
+            <img src="images/hotels/hotel.webp" alt="">
+          </div>
+          <div class="discription__section">
+            <br>
+            <div class="discription__details">
+              <div class="details__left">
+                <h3>
+                  Super Townhouse Ulsoor Near Halasuru Metro Station
+                </h3>
+                <span>Halasuru, Bangalore · </span>
+                <span>
+                  <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                        <path
+                          d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span>5.5 km</span>
+
+                <br><br><br><br>
+
+                <small class="rating">
+                  4.3
+                  <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                    </path>
+                  </svg>
+
+                </small> &nbsp
+                <small>(640 Ratings) . Very Good</small>
+
+                <br>
+                <br>
+
+                <span class="facility">
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  Doctor on call
+                  &nbsp;
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                    <path
+                      d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                    </path>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Parking facility
+                  &nbsp;
+                  &nbsp;
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Reception
+                  &nbsp;
+                  &nbsp;
+                  + 20 more
+                </span>
+
+              </div>
+              <div class="details__right">
+                <small style="color: #ee2e24; font-weight: bold;">
+                  <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                        fill-rule="nonzero">
+                        <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                          <path
+                            d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  10 people booked this hotel in last 6 hours
+                </small>
+              </div>
+            </div>
+
+            <!-- price section -->
+
+            <br><br><br>
+
+            <div class="price__section">
+              <div class="price__left">
+                <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                    style="color: #f5a623; ">72% off</span>
+                </h1>
+              </div>
+              <div class="price__right">
+                <button>View Details</button>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <!-- Hotel details -->
+
+        <div class="hotel__detail">
+          <div class="img">
+            <img src="images/hotels/hotel.webp" alt="">
+          </div>
+          <div class="discription__section">
+            <br>
+            <div class="discription__details">
+              <div class="details__left">
+                <h3>
+                  Super Townhouse Ulsoor Near Halasuru Metro Station
+                </h3>
+                <span>Halasuru, Bangalore · </span>
+                <span>
+                  <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                        <path
+                          d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span>5.5 km</span>
+
+                <br><br><br><br>
+
+                <small class="rating">
+                  4.3
+                  <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                    </path>
+                  </svg>
+
+                </small> &nbsp
+                <small>(640 Ratings) . Very Good</small>
+
+                <br>
+                <br>
+
+                <span class="facility">
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  Doctor on call
+                  &nbsp;
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                    <path
+                      d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                    </path>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Parking facility
+                  &nbsp;
+                  &nbsp;
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Reception
+                  &nbsp;
+                  &nbsp;
+                  + 20 more
+                </span>
+
+              </div>
+              <div class="details__right">
+                <small style="color: #ee2e24; font-weight: bold;">
+                  <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                        fill-rule="nonzero">
+                        <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                          <path
+                            d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  10 people booked this hotel in last 6 hours
+                </small>
+              </div>
+            </div>
+
+            <!-- price section -->
+
+            <br><br><br>
+
+            <div class="price__section">
+              <div class="price__left">
+                <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                    style="color: #f5a623; ">72% off</span>
+                </h1>
+              </div>
+              <div class="price__right">
+                <button>View Details</button>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <hr>
+        <br>
+        <br>
+
+        <!-- Hotel details -->
+
+        <div class="hotel__detail">
+          <div class="img">
+            <img src="images/hotels/hotel.webp" alt="">
+          </div>
+          <div class="discription__section">
+            <br>
+            <div class="discription__details">
+              <div class="details__left">
+                <h3>
+                  Super Townhouse Ulsoor Near Halasuru Metro Station
+                </h3>
+                <span>Halasuru, Bangalore · </span>
+                <span>
+                  <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                        <path
+                          d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span>5.5 km</span>
+
+                <br><br><br><br>
+
+                <small class="rating">
+                  4.3
+                  <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                    </path>
+                  </svg>
+
+                </small> &nbsp
+                <small>(640 Ratings) . Very Good</small>
+
+                <br>
+                <br>
+
+                <span class="facility">
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  Doctor on call
+                  &nbsp;
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                    <path
+                      d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                    </path>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Parking facility
+                  &nbsp;
+                  &nbsp;
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Reception
+                  &nbsp;
+                  &nbsp;
+                  + 20 more
+                </span>
+
+              </div>
+              <div class="details__right">
+                <small style="color: #ee2e24; font-weight: bold;">
+                  <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                        fill-rule="nonzero">
+                        <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                          <path
+                            d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  10 people booked this hotel in last 6 hours
+                </small>
+              </div>
+            </div>
+
+            <!-- price section -->
+
+            <br><br><br>
+
+            <div class="price__section">
+              <div class="price__left">
+                <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                    style="color: #f5a623; ">72% off</span>
+                </h1>
+              </div>
+              <div class="price__right">
+                <button>View Details</button>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <hr>
+        <br>
+        <br>
+
+        <!-- Hotel details -->
+
+        <div class="hotel__detail">
+          <div class="img">
+            <img src="images/hotels/hotel.webp" alt="">
+          </div>
+          <div class="discription__section">
+            <br>
+            <div class="discription__details">
+              <div class="details__left">
+                <h3>
+                  Super Townhouse Ulsoor Near Halasuru Metro Station
+                </h3>
+                <span>Halasuru, Bangalore · </span>
+                <span>
+                  <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                        <path
+                          d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span>5.5 km</span>
+
+                <br><br><br><br>
+
+                <small class="rating">
+                  4.3
+                  <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                    </path>
+                  </svg>
+
+                </small> &nbsp
+                <small>(640 Ratings) . Very Good</small>
+
+                <br>
+                <br>
+
+                <span class="facility">
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  Doctor on call
+                  &nbsp;
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                    <path
+                      d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                    </path>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Parking facility
+                  &nbsp;
+                  &nbsp;
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Reception
+                  &nbsp;
+                  &nbsp;
+                  + 20 more
+                </span>
+
+              </div>
+              <div class="details__right">
+                <small style="color: #ee2e24; font-weight: bold;">
+                  <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                        fill-rule="nonzero">
+                        <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                          <path
+                            d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  10 people booked this hotel in last 6 hours
+                </small>
+              </div>
+            </div>
+
+            <!-- price section -->
+
+            <br><br><br>
+
+            <div class="price__section">
+              <div class="price__left">
+                <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                    style="color: #f5a623; ">72% off</span>
+                </h1>
+              </div>
+              <div class="price__right">
+                <button>View Details</button>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <hr>
+        <br>
+        <br>
+
+        <!-- Hotel details -->
+
+        <div class="hotel__detail">
+          <div class="img">
+            <img src="images/hotels/hotel.webp" alt="">
+          </div>
+          <div class="discription__section">
+            <br>
+            <div class="discription__details">
+              <div class="details__left">
+                <h3>
+                  Super Townhouse Ulsoor Near Halasuru Metro Station
+                </h3>
+                <span>Halasuru, Bangalore · </span>
+                <span>
+                  <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                        <path
+                          d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span>5.5 km</span>
+
+                <br><br><br><br>
+
+                <small class="rating">
+                  4.3
+                  <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                    </path>
+                  </svg>
+
+                </small> &nbsp
+                <small>(640 Ratings) . Very Good</small>
+
+                <br>
+                <br>
+
+                <span class="facility">
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  Doctor on call
+                  &nbsp;
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                    <path
+                      d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                    </path>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Parking facility
+                  &nbsp;
+                  &nbsp;
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Reception
+                  &nbsp;
+                  &nbsp;
+                  + 20 more
+                </span>
+
+              </div>
+              <div class="details__right">
+                <small style="color: #ee2e24; font-weight: bold;">
+                  <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                        fill-rule="nonzero">
+                        <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                          <path
+                            d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  10 people booked this hotel in last 6 hours
+                </small>
+              </div>
+            </div>
+
+            <!-- price section -->
+
+            <br><br><br>
+
+            <div class="price__section">
+              <div class="price__left">
+                <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                    style="color: #f5a623; ">72% off</span>
+                </h1>
+              </div>
+              <div class="price__right">
+                <button>View Details</button>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <hr>
+        <br>
+        <br>
+
+        <!-- Hotel details -->
+
+        <div class="hotel__detail">
+          <div class="img">
+            <img src="images/hotels/hotel.webp" alt="">
+          </div>
+          <div class="discription__section">
+            <br>
+            <div class="discription__details">
+              <div class="details__left">
+                <h3>
+                  Super Townhouse Ulsoor Near Halasuru Metro Station
+                </h3>
+                <span>Halasuru, Bangalore · </span>
+                <span>
+                  <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                        <path
+                          d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span>5.5 km</span>
+
+                <br><br><br><br>
+
+                <small class="rating">
+                  4.3
+                  <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                    </path>
+                  </svg>
+
+                </small> &nbsp
+                <small>(640 Ratings) . Very Good</small>
+
+                <br>
+                <br>
+
+                <span class="facility">
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  Doctor on call
+                  &nbsp;
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                    <path
+                      d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                    </path>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Parking facility
+                  &nbsp;
+                  &nbsp;
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Reception
+                  &nbsp;
+                  &nbsp;
+                  + 20 more
+                </span>
+
+              </div>
+              <div class="details__right">
+                <small style="color: #ee2e24; font-weight: bold;">
+                  <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                        fill-rule="nonzero">
+                        <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                          <path
+                            d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  10 people booked this hotel in last 6 hours
+                </small>
+              </div>
+            </div>
+
+            <!-- price section -->
+
+            <br><br><br>
+
+            <div class="price__section">
+              <div class="price__left">
+                <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                    style="color: #f5a623; ">72% off</span>
+                </h1>
+              </div>
+              <div class="price__right">
+                <button>View Details</button>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <hr>
+        <br>
+        <br>
+
+        <!-- Hotel details -->
+
+        <div class="hotel__detail">
+          <div class="img">
+            <img src="images/hotels/hotel.webp" alt="">
+          </div>
+          <div class="discription__section">
+            <br>
+            <div class="discription__details">
+              <div class="details__left">
+                <h3>
+                  Super Townhouse Ulsoor Near Halasuru Metro Station
+                </h3>
+                <span>Halasuru, Bangalore · </span>
+                <span>
+                  <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                        <path
+                          d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z"
+                          id="Shape"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+                <span>5.5 km</span>
+
+                <br><br><br><br>
+
+                <small class="rating">
+                  4.3
+                  <svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z">
+                    </path>
+                  </svg>
+
+                </small> &nbsp
+                <small>(640 Ratings) . Very Good</small>
+
+                <br>
+                <br>
+
+                <span class="facility">
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  Doctor on call
+                  &nbsp;
+                  &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" id="parking-facility" viewBox="0 0 22 20">
+                    <path
+                      d="M18.265 11.322c-.14-.833-.6-3.383-1.096-4.348-.332-.642-1.18-1.134-2.524-1.46-1.09-.264-2.486-.41-3.927-.41-1.443 0-2.838.145-3.93.41-1.342.327-2.19.818-2.522 1.46-.496.964-.955 3.515-1.096 4.348-.758.505-1.13 1.234-1.13 2.204v2.632c0 .686.453 1.27 1.084 1.488v1.143c0 .58.487 1.052 1.085 1.052h1.085c.598 0 1.085-.473 1.085-1.053v-1.053h8.677v1.052c0 .58.487 1.052 1.085 1.052h1.084c.598 0 1.085-.473 1.085-1.053v-1.144a1.585 1.585 0 0 0 1.086-1.488v-2.632c0-.97-.373-1.7-1.13-2.204zm-7.542-5.39c3.247 0 5.352.706 5.686 1.373.322.645.68 2.352.903 3.572a5.8 5.8 0 0 0-.34-.09c-.3-.07-1.075-.148-1.42-.195l-2.86-2.165c-.252-.18-.547-.117-.728.135-.182.25-.135.45.117.63l1.763 1.26c-.957-.03-2.006-.03-3.123-.03-.132 0-.595.013-.726.013L7.03 8.427c-.26-.172-.51-.124-.68.135-.173.258-.137.47.122.643l1.85 1.23c-1.51.027-2.822.108-3.85.352a8.33 8.33 0 0 0-.34.09c.223-1.22.58-2.927.905-3.572.334-.666 2.44-1.374 5.686-1.374zM5.536 19.098H3.974v-1.363h1.562V19.1zm10.373 0v-1.363h1.56V19.1h-1.56zm2.64-2.755c0 .316-.25.572-.558.572H3.452a.566.566 0 0 1-.558-.572V13.48c0-1.058.543-1.623 1.876-1.948 1.404-.342 3.512-.342 5.953-.342 2.44 0 4.547 0 5.952.342 1.333.325 1.876.89 1.876 1.948v2.864zM5.84 15.295c.707 0 1.282-.557 1.282-1.243s-.575-1.244-1.282-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.282 1.244zm0-1.658c.236 0 .427.186.427.415a.42.42 0 0 1-.427.415.42.42 0 0 1-.427-.415c0-.23.19-.415.428-.415zm9.76 1.66c.708 0 1.283-.56 1.283-1.245s-.574-1.244-1.28-1.244c-.707 0-1.282.558-1.282 1.244 0 .686.575 1.244 1.28 1.244zm0-1.66c.237 0 .43.186.43.415a.42.42 0 0 1-.43.415.42.42 0 0 1-.426-.415c0-.23.19-.415.427-.415zM21.51 2.882c.364.093.57.416.46.72l-.024.064c-.11.303-.5.475-.864.382L11.015 1.275.918 4.048c-.364.093-.753-.08-.864-.382L.03 3.6c-.11-.303.096-.626.46-.72L11.014 0 21.51 2.882z">
+                    </path>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Parking facility
+                  &nbsp;
+                  &nbsp;
+                  <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                    <title>checkmark</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="new-icon-set-(exportable)" transform="translate(-121.000000, -698.000000)" fill="black">
+                        <path
+                          d="M132,720 C129.061263,720 126.299684,718.856 124.221263,716.778737 C122.142842,714.701474 121,711.938737 121,709.001158 C121,706.062421 122.144,703.300842 124.221263,701.222421 C126.298526,699.144 129.061263,698 132,698 C134.938737,698 137.700316,699.144 139.778737,701.222421 C141.857158,703.300842 143,706.062421 143,709.001158 C143,711.939895 141.856,714.701474 139.778737,716.778737 C137.701474,718.856 134.938737,720 132,720 L132,720 Z M132,699.157895 C137.427053,699.157895 141.842105,703.572947 141.842105,709 C141.842105,714.427053 137.427053,718.842105 132,718.842105 C126.572947,718.842105 122.157895,714.427053 122.157895,709 C122.157895,703.572947 126.572947,699.157895 132,699.157895 Z M129.684211,713.631579 L129.681895,713.631579 C129.830105,713.631579 129.978316,713.576 130.091789,713.462526 L138.197053,705.357263 C138.422842,705.131474 138.422842,704.764421 138.197053,704.538632 C137.971263,704.312842 137.604211,704.312842 137.378421,704.538632 L129.683053,712.234 L126.619263,709.170211 C126.393474,708.944421 126.026421,708.944421 125.800632,709.170211 C125.574842,709.396 125.574842,709.763053 125.800632,709.988842 L129.274316,713.462526 C129.387789,713.574842 129.536,713.631579 129.684211,713.631579 Z"
+                          id="checkmark"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  &nbsp;
+                  &nbsp;
+                  Reception
+                  &nbsp;
+                  &nbsp;
+                  + 20 more
+                </span>
+
+              </div>
+              <div class="details__right">
+                <small style="color: #ee2e24; font-weight: bold;">
+                  <svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Asssets" transform="translate(-645.000000, -147.000000)" fill="#EF4023"
+                        fill-rule="nonzero">
+                        <g id="urgency-element" transform="translate(645.000000, 147.000000)">
+                          <path
+                            d="M7.96248679,5.66916604 L7.95776345,5.66205772 C7.84363784,5.49030597 7.61188845,5.44359075 7.4401367,5.55771636 C7.34413586,5.62150701 7.28297803,5.72606011 7.27442843,5.84100494 C7.22777449,6.46825207 6.82807926,6.8519375 6.46963566,7.00185706 C6.08308518,7.1634637 5.71704848,7.09246831 5.53715451,6.82094976 C5.22384622,6.34822913 5.3773511,6.06933948 5.69944745,5.57697873 C6.04982496,5.04140972 6.52970819,4.30793624 6.10208035,2.98278605 C5.78125366,1.98851121 5.15501051,1.15526109 4.24070299,0.506143111 C3.99774903,0.333673791 3.7389865,0.178880576 3.47163508,0.0460551957 L3.45620729,0.0383916829 C3.27471124,-0.0517636582 3.05449427,0.0222826197 2.96433893,0.203778674 C2.91573227,0.301631072 2.91326022,0.416054314 2.95759539,0.515914675 C3.205628,1.07449414 3.56802997,2.19432024 3.20898888,3.41828745 C2.99068134,4.16252663 2.37823023,4.76118648 1.78591948,5.34018197 C0.948812513,6.15849591 0,7.08594586 0,8.56795025 C0,9.71803668 0.436814241,10.6370729 1.29826888,11.2995995 C1.89062943,11.755129 2.52386817,11.9674362 2.62399737,11.9903254 L2.62399737,11.9903254 C2.65208958,11.9967547 2.68081647,12 2.70963501,12 L6.88640543,12 C6.96631427,12 7.04417878,11.9747441 7.10887419,11.9278408 C8.20959827,11.1299671 8.83036444,10.1641583 8.95396997,9.05720738 C9.11160748,7.64486478 8.40044621,6.32824956 7.96248679,5.66916604 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  10 people booked this hotel in last 6 hours
+                </small>
+              </div>
+            </div>
+
+            <!-- price section -->
+
+            <br><br><br>
+
+            <div class="price__section">
+              <div class="price__left">
+                <h1>₹1359 <del style="font-weight: 100; color: grey; font-size: large;">₹5614</del> <span
+                    style="color: #f5a623; ">72% off</span>
+                </h1>
+              </div>
+              <div class="price__right">
+                <button>View Details</button>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+
+    <div class="footer__container">
+      <div class="footer__head">
+        <div class="footer__head__left">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>OYO</title>
+            <path
+              d="M19.843 16.185C22.135 16.185 24 14.307 24 12c0-2.309-1.865-4.185-4.157-4.185-2.293 0-4.158 1.876-4.158 4.185 0 2.307 1.865 4.185 4.158 4.185zm0-5.677c.817 0 1.482.67 1.482 1.492s-.666 1.49-1.483 1.49A1.488 1.488 0 0 1 18.36 12c0-.824.665-1.493 1.482-1.493zM4.157 16.185c2.293 0 4.158-1.878 4.158-4.185 0-2.309-1.865-4.185-4.158-4.185C1.866 7.815 0 9.691 0 12c0 2.307 1.866 4.185 4.157 4.185zm0-5.677c.818 0 1.483.67 1.483 1.492s-.665 1.49-1.483 1.49A1.488 1.488 0 0 1 2.677 12c0-.824.664-1.493 1.48-1.493zm7.84-.094L10.722 7.87H7.733l2.791 5.564v2.62h2.948v-2.62l2.791-5.564h-2.99l-1.275 2.544Z" />
+          </svg>
+          <h2>
+            World's leading chain of hotels and homes
+          </h2>
+        </div>
+        <div class="footer__head__right">
+          <h2>
+            Join our network and grow your business!
+          </h2>
+          <button>
+            <img src="images/building.png" alt="">
+            <p>
+              List your property
+            </p>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer__app__section">
+        <div class="sec_1">
+          <p>Download OYO app for exciting offers.</p>
+          <div class="connection_images">
+            <img src="images/appstore.png" alt="">
+            <img src="images/playstore.png" alt="">
+          </div>
+        </div>
+        <div class="vertical__bar"></div>
+        <div class="sec_2">
+          <h4>
+            About Us
+          </h4>
+          <h4>
+            Teams / Careers
+          </h4>
+          <h4>
+            Blogs
+          </h4>
+          <h4>
+            Support
+          </h4>
+          <h4>
+            Official OYO Blog
+          </h4>
+          <h4>
+            Investor Relations
+          </h4>
+          <h4>
+            OYO Circles
+          </h4>
+          <h4>
+            OYO Frames
+          </h4>
+        </div>
+        <div class="vertical__bar"></div>
+        <div class="sec_2">
+          <h4>
+            Terms and conditions
+          </h4>
+          <h4>
+            Guest Policies
+          </h4>
+          <h4>
+            Privacy Policy
+          </h4>
+          <h4>
+            Trust And Saftey
+          </h4>
+          <h4>
+            Cyber Security
+          </h4>
+          <h4>
+            Cyber Security Awareness
+          </h4>
+          <h4>
+            Responsible Disclosure
+          </h4>
+          <h4>
+            Advertise your Homes
+          </h4>
+        </div>
+      </div>
+      <hr style="width: 85%; margin: auto;">
+
+      <div class="hotels__section">
+        <h2>
+          OYO Hotels
+        </h2>
+        <div class="hotel__list__section">
+          <!-- col 1 -->
+          <div class="hotel__list">
+            <h4>
+              Hotels near me
+            </h4>
+            <h4>
+              Hotels in Manali
+            </h4>
+            <h4>
+              Hotels in Nainital
+            </h4>
+            <h4>
+              Hotels in Mount Abu
+            </h4>
+            <h4>
+              Hotels in Agra
+            </h4>
+            <h4>
+              Hotels in Haridwar
+            </h4>
+            <h4>
+              Hotels in Gurgaon
+            </h4>
+            <h4>
+              Hotels in Coimbatore
+            </h4>
+            <h4>
+              OYO Hotels UK
+            </h4>
+            <h4>
+              OYO Vacation Homes in Europe
+            </h4>
+          </div>
+          <!-- col 2 -->
+          <div class="hotel__list">
+            <h4>
+              Hotels near me
+            </h4>
+            <h4>
+              Hotels in Manali
+            </h4>
+            <h4>
+              Hotels in Nainital
+            </h4>
+            <h4>
+              Hotels in Mount Abu
+            </h4>
+            <h4>
+              Hotels in Agra
+            </h4>
+            <h4>
+              Hotels in Haridwar
+            </h4>
+            <h4>
+              Hotels in Gurgaon
+            </h4>
+            <h4>
+              Hotels in Coimbatore
+            </h4>
+            <h4>
+              OYO Hotels UK
+            </h4>
+            <h4>
+              OYO Vacation Homes in Europe
+            </h4>
+          </div>
+          <!-- col 3 -->
+          <div class="hotel__list">
+            <h4>
+              Hotels near me
+            </h4>
+            <h4>
+              Hotels in Manali
+            </h4>
+            <h4>
+              Hotels in Nainital
+            </h4>
+            <h4>
+              Hotels in Mount Abu
+            </h4>
+            <h4>
+              Hotels in Agra
+            </h4>
+            <h4>
+              Hotels in Haridwar
+            </h4>
+            <h4>
+              Hotels in Gurgaon
+            </h4>
+            <h4>
+              Hotels in Coimbatore
+            </h4>
+            <h4>
+              OYO Hotels UK
+            </h4>
+            <h4>
+              OYO Vacation Homes in Europe
+            </h4>
+          </div>
+          <!-- col 4 -->
+          <div class="hotel__list">
+            <h4>
+              Hotels near me
+            </h4>
+            <h4>
+              Hotels in Manali
+            </h4>
+            <h4>
+              Hotels in Nainital
+            </h4>
+            <h4>
+              Hotels in Mount Abu
+            </h4>
+            <h4>
+              Hotels in Agra
+            </h4>
+            <h4>
+              Hotels in Haridwar
+            </h4>
+            <h4>
+              Hotels in Gurgaon
+            </h4>
+            <h4>
+              Hotels in Coimbatore
+            </h4>
+            <h4>
+              OYO Hotels UK
+            </h4>
+            <h4>
+              OYO Vacation Homes in Europe
+            </h4>
+          </div>
+          <!-- col 5 -->
+          <div class="hotel__list">
+            <h4>
+              Hotels near me
+            </h4>
+            <h4>
+              Hotels in Manali
+            </h4>
+            <h4>
+              Hotels in Nainital
+            </h4>
+            <h4>
+              Hotels in Mount Abu
+            </h4>
+            <h4>
+              Hotels in Agra
+            </h4>
+            <h4>
+              Hotels in Haridwar
+            </h4>
+            <h4>
+              Hotels in Gurgaon
+            </h4>
+            <h4>
+              Hotels in Coimbatore
+            </h4>
+            <h4>
+              OYO Hotels UK
+            </h4>
+            <h4>
+              OYO Vacation Homes in Europe
+            </h4>
+          </div>
+          <!-- col 6 -->
+          <div class="hotel__list">
+            <h4>
+              Hotels near me
+            </h4>
+            <h4>
+              Hotels in Manali
+            </h4>
+            <h4>
+              Hotels in Nainital
+            </h4>
+            <h4>
+              Hotels in Mount Abu
+            </h4>
+            <h4>
+              Hotels in Agra
+            </h4>
+            <h4>
+              Hotels in Haridwar
+            </h4>
+            <h4>
+              Hotels in Gurgaon
+            </h4>
+            <h4>
+              Hotels in Coimbatore
+            </h4>
+            <h4>
+              OYO Hotels UK
+            </h4>
+            <h4>
+              OYO Vacation Homes in Europe
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <hr style="width: 85%; margin: auto;">
+
+      <div class="footer__end">
+        <div class="icons">
+          <img src="images/icons8-facebook-50.png" alt="">
+          <img src="images/icons8-ig-50.png" alt="">
+          <img src="images/icons8-twitter-circled-50.png" alt="">
+          <img src="images/icons8-youtube-100.png" alt="">
+          <img src="images/icons8-pinterest-50.png" alt="">
+        </div>
+        <div class="copy__right">
+          2013-2022 © Oravel Stays Limited
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+Subject: Assignment Submission Deadline: Friday, 24th May 2024, 10:30 AM
+
+Dear [Recipient's Name],
+
+I hope this message finds you well.
+
+This email serves as a formal notification regarding the upcoming assignment submission. You are required to complete and submit the assigned task by Friday, 24th May 2024, no later than 10:30 AM.
+
+The assignment comprises a series of questions covering HTML, CSS, and JavaScript. Please ensure that each question is answered thoroughly and accurately. Below are the specific questions you need to address:
+
+HTML Questions:
+
+What does HTML stand for?
+What is the purpose of HTML?
+What is an HTML element?
+What is an HTML attribute?
+What is the difference between a block-level element and an inline element?
+What are some common block-level elements in HTML?
+What are some common inline elements in HTML?
+What is the purpose of the <head> element in an HTML document?
+How do you create a hyperlink in HTML?
+What is the role of the <meta> tag in HTML?
+CSS Questions:
+
+What does CSS stand for?
+What is the purpose of CSS?
+How do you apply CSS to an HTML document?
+What is a CSS selector?
+What is the difference between a class selector and an ID selector in CSS?
+How do you center a block element horizontally in CSS?
+What is the box model in CSS?
+How can you add a background color to an HTML element using CSS?
+What is a CSS pseudo-class?
+What are media queries in CSS?
+JavaScript Questions:
+
+What is JavaScript?
+How do you include JavaScript in an HTML document?
+Please ensure that your responses are detailed and well-structured. Timely submission of this assignment is crucial. Should you have any questions or require further clarification, do not hesitate to contact me at your earliest convenience.
+
+Thank you for your attention to this matter. I look forward to your prompt and thorough completion of this task.
+
+Best regards,
+
+[Your Full Name]
+[Your Position]
+[Your Contact Information]
+[Your Company/Organization Name]
+
+
+
+
+

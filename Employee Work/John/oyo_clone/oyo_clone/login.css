@@ -1,0 +1,183 @@
+:root {
+  --bg: #f3f5f7;
+  --footer-bg: #6d787d;
+  --color-1: #ffffff;
+  --grey-1: rgba(0, 0, 0, .54);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.login__container {
+  background: url('login__bg.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login__container .heading {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 5rem;
+}
+
+.login__container .heading svg {
+  width: 5.5rem;
+  fill: #222222;
+  margin-right: 2rem;
+}
+
+.login__container .heading h3 {
+  display: inline-block;
+  color: #ffffff;
+}
+
+.left__container div span {
+  color: #ffffff;
+  display: block;
+}
+
+.container {
+  display: flex;
+}
+
+.right__container {
+  flex-basis: 40%;
+}
+
+.left__container div {
+  width: 60ch;
+  margin: 90px 120px 0 220px;
+}
+
+.left__container div span:nth-child(1) {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+.left__container div span:nth-child(2) {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  width: 65ch;
+}
+
+.right__container {
+  padding-left: 2rem;
+}
+
+.offer__banner {
+  width: 80%;
+  display: flex;
+  height: 2.4rem;
+  align-items: center;
+  background-image: linear-gradient(270deg, #d11450, #ee2a24);
+}
+
+.offer__banner img {
+  margin: 0 1rem 0 2rem;
+  width: 1rem;
+}
+
+.offer__banner span {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.signin__container {
+  background: var(--bg);
+  width: 80%;
+  border: #ffffff 1px solid;
+}
+
+.verify__section h1 {
+  margin: 2rem 0;
+}
+
+.number {
+  margin: 0.5rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  height: 2rem;
+  width: 90%;
+  height: 3rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+
+}
+
+.number span {
+  height: 50%;
+  margin: 0 1rem;
+  border: 1px solid lightgray;
+}
+
+.number input {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.verify__section {
+  padding: 2rem;
+}
+
+.verify__section button:hover {
+  cursor: pointer;
+  border: 1px solid lightgray;
+  background: #ffffff;
+  color: lightgray;
+}
+
+.verify__section button {
+  width: 50%;
+  height: 3rem;
+  border: none;
+  background: lightgray;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+.verify__section p:nth-last-child(1) {
+  margin: 1rem 0 0 0;
+  font-weight: bolder;
+}
+
+.line {
+  position: relative;
+  border-top: 1px solid lightgray;
+  margin-top: 3.5rem;
+
+}
+
+.banner__on__line {
+  position: absolute;
+  background: var(--bg);
+  top: -25%;
+  left: 4%;
+  padding: 3px;
+}
+
+.line div:nth-last-child(1) {
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.signin__as {
+  padding-left: 1.5rem;
+}
+
+.pipeline {
+  display: inline-block;
+  color: lightgray;
+}

@@ -1,0 +1,664 @@
+1)let number = 8
+
+let remainder = (number % 2)
+if (remainder==0)
+    
+{
+    console.log(`${number} is even`)
+} else{
+    console.log(`${number} is odd`)
+}
+8 is even
+
+2)def find_largest(num1, num2, num3):
+    if num1 >= num2:
+        if num1 >= num3:
+            largest = num1
+        else:
+            largest = num3
+    else:
+        if num2 >= num3:
+            largest = num2
+        else:
+            largest = num3
+    return largest
+
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+number3 = float(input("Enter the third number: "))
+
+
+print("The largest number is:", find_largest(number1, number2, number3))
+
+3)let number = -8
+
+
+if (number > 0)
+    
+{
+    console.log(`${number} is positive`)
+} else{
+    console.log(`${number} is not positive`)
+}
+ -8 is not positive
+
+4)let number =  15;
+
+
+if(number>0){
+    console.log(`number is positive`);
+}
+else {
+    console.log(`number is negative`)
+}
+number is positive
+5)
+let grade ="C"
+
+switch(grade){
+    case 'A':
+ console.log("Excellent");
+ break;
+ case 'B':
+ console.log("Good");
+ break;
+case 'C':
+        console.log("Average");
+         break;
+     case 'D':
+  console.log("poor");
+        
+}
+Average
+
+6)
+
+for(let i=1;i<=10;i++){
+console.log(i);
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+7)let i= 1;
+do {
+    console.log(i);
+    i++;
+
+}while(i<=5);
+1
+2
+3
+4
+5
+
+8)
+
+let number = 5;
+let i = 1;
+
+while (i <= 10) {
+    console.log(`${number} x ${i} = ${number * i}`); 
+    i++;
+}
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+9)let person={
+    name:"John",
+     age: 25,
+     city:"New York",
+     
+};
+for (let property in person) {
+    console.log(`${property}: ${person[property]}`);
+}
+   name: John
+age: 25
+city: New York
+
+10)let number=107;
+if(number >=100){
+     console.log(`The number is large`);
+}
+The number is large
+
+11)let age=56;
+
+if(age>=18){
+    console.log(`Person can vote`);
+}
+else{
+    console.log(`Person can't vote`);
+}
+Person can vote
+12)let temperature=0;
+
+if(temperature<0){
+    console.log(`cold`);
+}
+else if(0<=25){
+    console.log(`Warm`);
+}
+else  {
+    console.log(`hot`);
+}
+Warm
+
+13)let number=18;
+
+if(number % 2 === 0 && number % 3 === 0) {
+    console.log(`Divisible by both 2 and 3`);
+}
+else if(number % 2 === 0){
+    console.log(`Divisible by 2 `);
+}
+else if (number % 3 === 0){
+    console.log(`Divisible by  3`);
+}
+else{
+    console.log(`Not Divisible by both 2 and 3`);
+}
+Divisible by both 2 and 3
+
+14)let number ="7";
+
+switch(number){
+    case '1':
+ console.log("Monday");
+ break;
+ case '2':
+ console.log("Tue");
+ break;
+case '3':
+        console.log("Wed");
+         break;
+     case '4':
+  console.log("Thursday");
+  break;
+  case '5':
+    console.log("Friday");
+    break;
+    case '6':
+    console.log("Saturday");
+    break;   
+    case '7':
+        console.log("Sunday");
+        break;  
+}
+Sunday
+
+15)
+let number =  10;
+
+if (isNaN(number) || number < 0) {
+    console.log("Please enter a valid non-negative integer.");
+} else {
+   
+    let factorial = 1;
+
+    
+    for (let i = 1; i <= number; i++) {
+        factorial *= i; 
+    }
+
+   
+    console.log(`The factorial of ${number} is ${factorial}.`);
+}
+The factorial of 10 is 3628800.
+16)
+const predefinedNumber = 7;
+
+
+let guess;
+
+
+do {
+ 
+    guess = parseInt(prompt("Guess the number:"), 10);
+
+
+    if (isNaN(guess)) {
+        console.log("Please enter a valid number.");
+    }
+} while (guess !== predefinedNumber);
+
+console.log("Correct!");
+17)
+let number=10;
+let i=1;
+
+while(i<=number){
+    if(i%2===0){
+        console.log(i);
+    }
+    i++;
+}
+2
+4
+6
+8
+10
+
+18)const book ={
+    title:"Book",
+    author: "Jhon Doe",
+    year:2020
+};
+for (let key in book){
+    console.log(`${key}:${book[key]}`);
+}
+title:Book
+author:Jhon Doe
+year:2020
+
+19)let cha= "o";
+
+
+const vowels=["a","e","i","o","u"];
+
+if(vowels.includes(cha)){
+    console.log(`Entered chatracter is vowel`);
+}
+else{
+    console.log(`Not vowel`);
+}
+Entered chatracter is vowel
+
+20)let userInput ="lk";
+
+if(userInput===""){
+    console.log("The string is empty.");
+
+}else{
+    console.log(" Not empty.");
+
+}
+Entered chatracter is vowel
+
+21)let age = 10;
+
+if ( age < 0) {
+    console.log("Please enter a valid  number");
+} else {
+   
+    if (age < 13) {
+        console.log("Child");
+    } else if (age >= 13 && age <= 19) {
+        console.log("Teenager");
+    } else {
+        console.log("Adult");
+    }
+}
+Child
+22)
+let number = 10;
+
+ if (number > 0) {
+        console.log("The number is positive.");
+    } else {
+        if (number < 0) {
+            console.log("The number is negative.");
+        } else {
+            console.log("The number is zero.");
+        }
+    }
+The number is positive.
+23)
+
+let grade ="4"
+
+switch(grade){
+    case '1':
+ console.log("Jan");
+ break;
+ case '2':
+ console.log("feb");
+ break;
+case '3':
+        console.log(" Marc");
+         break;
+     case '4':
+  console.log("April");
+  break;
+  case '5':
+ console.log("may");
+ break;
+ case '6':
+ console.log("june");
+ break;
+case '7':
+        console.log(" july");
+         break;
+     case '8':
+  console.log("Agu");
+         
+}
+April
+24)let numTerms=100;
+let a=0;
+let b=1;
+for (let i = 1; i < numTerms; i++) {
+    console.log(b);
+    let nextTerm = a + b;
+    a = b;
+    b = nextTerm;
+}
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+26)
+let n = 10;
+let sum = 0;
+let i = 1;
+
+if ( n <= 0) {
+   
+} else {
+   
+    while (i <= n) {
+        sum += i;
+        i++;
+    }
+
+ 
+    console.log("The sum of all numbers 1 to " + n + " is: " + sum);
+}
+The sum of all numbers 1 to 10 is: 55
+27)
+const productDetails = {
+    product: "Laptop",
+    price: 999.99,
+    quantity: 10
+};
+for (let property in productDetails) {
+   
+    console.log(`${property}: ${productDetails[property]}`);
+}
+product: Laptop
+price: 999.99
+quantity: 10
+28)
+
+let userInput = "p"
+
+
+if (userInput.includes('a') || userInput.includes('A')) {
+    console.log("The string contains 'a'.");
+} else {
+    console.log("The string does not contain 'a'.");
+}
+The string does not contain 'a'.
+29)let year=2022;
+
+if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+    console.log("Leap Year");
+} else {
+    console.log("Not a Leap Year");
+}
+Not a Leap Year
+
+30)
+
+
+let grade = 90;
+
+
+if (isNaN(grade) || grade < 0 || grade > 100) {
+    console.log("Please enter a valid grade between 0 and 100.");
+} else {
+   
+    let letterGrade;
+    
+    if (grade >= 90 && grade <= 100) {
+        letterGrade = "A";
+    } else if (grade >= 80 && grade < 90) {
+        letterGrade = "B";
+    } else if (grade >= 70 && grade < 80) {
+        letterGrade = "C";
+    } else if (grade >= 60 && grade < 70) {
+        letterGrade = "D";
+    } else {
+        letterGrade = "F";
+    }
+    
+    console.log("The letter grade is: " + letterGrade);
+}
+The letter grade is: A
+
+31)let number=36;
+
+
+if((number%4==0) && (number%6==0)){
+    console.log(`Div by 4 AND 6`);
+    }
+    else if((number%4==0)){
+        console.log(`Div by 4 `);
+    }
+    else if((number%6==0)){
+        console.log(`Div by 6 `);
+    }
+    else{
+        console.log(`Not Div by6 and 4 `);
+    }
+Div by 4 AND 6
+32)for(i=1;i<=12;i++){
+    let square = i*i;
+    console.log(`The suare of ${i} is ${square}`);
+}
+The suare of 1 is 1
+The suare of 2 is 4
+The suare of 3 is 9
+The suare of 4 is 16
+The suare of 5 is 25
+The suare of 6 is 36
+The suare of 7 is 49
+The suare of 8 is 64
+The suare of 9 is 81
+The suare of 10 is 100
+The suare of 11 is 121
+The suare of 12 is 144
+33)let passWord = "letmein";
+const exact = "letmein";
+
+if(passWord==exact){
+    console.log(`Access Granted`);
+}else{
+    console.log(`wrong`);
+}
+Access Granted
+35)
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+let maxNumber = 24;
+
+if (isNaN(maxNumber) || maxNumber <= 0) {
+    console.log("Please enter a valid positive integer.");
+} else {
+    let currentNumber = 2; 
+
+  
+    while (currentNumber < maxNumber) {
+        if (isPrime(currentNumber)) {
+            console.log(currentNumber);
+        }
+        currentNumber++;
+    }
+}
+2
+3
+5
+7
+11
+13
+17
+19
+23
+36)
+const movieDetails = {
+    movie: "Inception",
+    director: "Christopher Nolan",
+    year: 2010
+};
+for (let property in movieDetails) {
+     console.log(`${property}: ${movieDetails[property]}`);
+}
+movie: Inception
+director: Christopher Nolan
+year: 2010
+37)
+let userInput = "str";
+
+if (userInput.length > 5) {
+    console.log("The string is long.");
+} else {
+    console.log("The string is not long.");
+}
+The string is not long.
+38)let number = 50 ;
+if (number % 10 === 0) {
+        console.log("Multiple of 10");
+    } else {
+        console.log("Not a multiple of 10");
+    }
+Multiple of 10
+40)
+let char ="Z";
+if (char.length === 1) {
+    let charCode = char.charCodeAt(0);
+
+    
+    if (charCode >= 48 && charCode <= 57) {
+        console.log("The character is a digit.");
+    } else {
+       
+        if (charCode >= 65 && charCode <= 90) {
+            console.log("The character is an uppercase letter.");
+        } else {
+     
+            if (charCode >= 97 && charCode <= 122) {
+                console.log("The character is a lowercase letter.");
+            } else {
+                console.log("The character is neither a digit, nor an uppercase letter, nor a lowercase letter.");
+            }
+        }
+    }
+} else {
+    console.log("Please enter a single character.");
+}
+The character is an uppercase letter.
+41)
+let number = 5;
+
+switch (number) {
+    case 1:
+        console.log("One");
+        break;
+    case 2:
+        console.log("Two");
+        break;
+    case 3:
+        console.log("Three");
+        break;
+    case 4:
+        console.log("Four");
+        break;
+    case 5:
+        console.log("Five");
+        break;
+    default:
+        console.log("Please enter a number between 1 and 5.");
+}
+Five
+42)
+let sum = 0;
+
+for (let i = 1; i <= 50; i++) {
+    let evenNumber = i * 2;
+    sum += evenNumber;
+}
+console.log("The sum of first 50 even number =", sum);
+
+The sum of first 50 even number = 2550
+43)
+let sum = 0;
+
+do {
+
+    let number =80 ;
+    
+    if (!isNaN(number)) {
+    
+        sum += number;
+    } else {
+        console.log("Please enter a valid number.");
+    }
+} while (sum <= 100); 
+console.log("The total sum is:", sum);
+
+The total sum is: 160
+
+44)
+let number = 10;
+
+
+let factorial = 1;
+
+
+let counter = number;
+
+
+if (isNaN(number) || number < 0) {
+    console.log("Please enter a valid non-negative integer.");
+} else {
+    while (counter > 1) {
+        factorial *= counter;
+        counter--;
+    }
+
+    // Print the factorial of the number
+    console.log("The factorial of " + number + " is " + factorial);
+}
+The factorial of 10 is 3628800
+
+45)const person ={
+make : "toyata",
+model : "corolla",
+year :2022
+}
+for(let property in person ){
+    console.log(`car details: ${person[property]}`);
+}
+make: toyata
+model: corolla
+year: 2022

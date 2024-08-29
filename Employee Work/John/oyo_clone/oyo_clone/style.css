@@ -1,0 +1,532 @@
+:root {
+  --bg: #f3f5f7;
+  --footer-bg: #6d787d;
+  --color-1: #ffffff;
+  --grey-1: rgba(0, 0, 0, .54);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout__container {
+  background: var(--bg);
+  font-family: sans-serif;
+  width: 100vw;
+  overflow: auto;
+}
+
+.navbar {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--color-1);
+  overflow: hidden;
+}
+
+.logo svg {
+  width: 4.5rem;
+}
+
+.icon img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.promoCard label img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.navigations__container {
+  /* background: lightblue; */
+}
+
+.navigations__container ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.promoCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  margin: 0 px;
+  border-right: 1px solid lightgray;
+  padding: 0.5rem 0.8rem;
+}
+
+.promoCard .icon {
+  padding: 0 1rem;
+}
+
+.diacription .text_1 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.diacription .text_2 {
+  font-weight: lighter;
+  color: var(--grey-1);
+  letter-spacing: -0.5px;
+}
+
+.login__link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Cities */
+
+.cities__container {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.city {
+  position: relative;
+  display: inline-block;
+}
+
+.city>div h2 {
+  color: var(--grey-1);
+  font-size: 1rem;
+  font-weight: normal;
+  height: 2.5rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.hover__content {
+  position: absolute;
+  top: 100%;
+  display: none;
+  background: #ffffff;
+  width: 250px;
+  height: fit-content;
+}
+
+.hover__content h4 {
+  padding: 0rem;
+}
+
+.hover__content a {
+  text-decoration: none;
+  color: var(--grey-1);
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.hover__content a:hover {
+  color: red;
+}
+
+.city:hover .hover__content {
+  display: block;
+}
+
+
+/* Search Section */
+
+.search__container {
+  background-image: url('images/search_bg.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__container .sub__search__container h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.search__bar {
+  height: 3.5rem;
+  display: flex;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.search,
+.date,
+.room,
+.search__btn {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  justify-content: space-between;
+  width: 45%;
+  padding: 0 1rem;
+  border-right: 1px solid var(--grey-1);
+  height: 100%;
+}
+
+.nearMe {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  border-radius: 16px;
+}
+
+.nearMe img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nearMe p {
+  color: var(--grey-1);
+  font-weight: bold;
+}
+
+.date {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--grey-1);
+
+}
+
+.room {
+  width: 20%;
+  border-right: 1px solid var(--grey-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search__btn {
+  width: 15%;
+  background: #1ab64f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.search__btn h4 {
+  text-align: center;
+}
+
+.continue_search_container {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.continue_search_container {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.continue_search_container {
+  margin-top: 1rem;
+}
+
+.guest {
+  padding: 0.5rem;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+}
+
+/* Offer Banner */
+
+.offer__container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background: #ffffff;
+}
+
+.offer__container .banner__1,
+.offer__container .banner__2 {
+  width: 85%;
+  margin: auto;
+}
+
+.offer__container .banner__2 {
+  margin-bottom: 3rem;
+}
+
+.offer__container .banner__1 img,
+.offer__container .banner__2 img {
+  width: 100%;
+}
+
+.get__access {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+.right__section form {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 400px;
+}
+
+.right__section label {
+  position: absolute;
+  top: -20%;
+  left: 2%;
+  font-size: small;
+  background: #ffffff;
+  color: var(--grey-1);
+
+}
+
+.right__section input,
+.right__section button {
+  height: 2.5rem;
+  border-radius: 5px;
+}
+
+.right__section input {
+  width: 250px;
+  padding: 0 2rem;
+  border: 1px solid var(--grey-1);
+}
+
+.right__section button {
+  background: #ee2a24;
+  width: 100px;
+  font-size: large;
+  color: #ffffff;
+  border: none;
+}
+
+/* world map */
+
+.map__container {
+  display: flex;
+  padding: 20px 0;
+}
+
+.map__container .map__left,
+map__container .map__right {
+  width: 50%;
+  margin: 0 40px;
+}
+
+.map__container .map__left img {
+  width: 100%;
+}
+
+.map__container .map__right {
+  width: 50%;
+}
+
+.map__container .map__right h2 {
+  margin-bottom: 2rem;
+}
+
+.insights {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.insights h1 {
+  font-size: 2rem;
+}
+
+.map__right>p,
+.insights p {
+  color: var(--grey-1);
+}
+
+.insights .slash {
+  border-right: 0.25px solid var(--grey-1);
+  transform: rotate(30deg);
+  margin: 0 2rem;
+}
+
+.countries__list {
+  width: 80%;
+  list-style: none;
+  margin: 3rem 0 0 -3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.countries__list li {
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem;
+  font-weight: bold;
+}
+
+.countries__list>li .colors {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 0 12px 0 0;
+  background: #000;
+}
+
+
+/* footer */
+
+.footer__container {
+  background-color: var(--footer-bg);
+  color: var(--bg);
+  padding-bottom: 1rem;
+
+}
+
+.footer__head {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid var(--bg);
+}
+
+.footer__head__left {
+  display: flex;
+  align-items: center;
+}
+
+.footer__container .footer__head .footer__head__left svg {
+  fill: var(--bg);
+  width: 6rem;
+  margin: 0 2rem 0 0;
+}
+
+.footer__container .footer__head .footer__head__left h2,
+.footer__container .footer__head .footer__head__right h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+
+}
+
+.footer__head__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__head__right>button {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  padding: 0.5em 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer__head__right button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer__head__right button p {
+    font-weight: bold;
+}
+
+.footer__app__section {
+  display: flex;
+  padding: 2rem 0;
+  margin-left: 8%;
+}
+
+.footer__app__section .sec_1 .connection_images {
+  display: flex;
+  align-items: center;
+}
+
+.footer__app__section .sec_1 p {
+  margin-left: 5px;
+}
+
+.footer__app__section .sec_1 .connection_images img {
+  width: 150px;
+}
+
+.footer__app__section .sec_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin: 1.5rem 0; */
+}
+
+.vertical__bar {
+  background-color: var(--bg);
+  width: 1px;
+  margin: 0 3rem 0 6rem;
+}
+
+.footer__app__section .sec_2 h4 {
+  display: inline-block;
+  font-weight: normal;
+  margin: 0.5rem 1rem;
+}
+
+.hotels__section {
+  padding: 2rem 7rem;
+}
+
+.hotel__list__section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.hotel__list>h4 {
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 1rem 0;
+
+}
+
+.footer__end {
+  width: 85%;
+  margin: 2rem 0 0 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__end .icons img {
+  width: 35px;
+  margin: 0 0.5rem;
+}
+
+.copy__right {
+  color: #ffffff;
+  font-size: small;
+  font-weight: bold;
+}
